@@ -26,7 +26,7 @@ st.markdown("Log the vibe of your ticket below:")
 
 # Mood input form
 with st.form("mood_form"):
-    moods = [ "🎉","😊","😐","😕","😠"]
+    moods = [ "🎉 Joyful","😊 Happy","😐 Okay","😕 Confused","😠 Frustrated"]
     mood = st.selectbox("How does this ticket feel to you?", moods)
     note = st.text_input("Optional Note (e.g., 'Rx delays')", "")
     submitted = st.form_submit_button("Submit")
